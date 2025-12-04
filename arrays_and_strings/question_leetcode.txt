@@ -1,0 +1,52 @@
+
+### 1. The "Must Know" (Frequency: High)
+*These appear in almost every initial screening. Memorize the pattern, not just the code.*
+
+| Problem | Pattern | Why it's here |
+| :--- | :--- | :--- |
+| **1. Two Sum** | Hash Map | The #1 most asked question. Teaches $O(N)$ lookup. |
+| **2. Best Time to Buy and Sell Stock** | Sliding Window / Min-Max | Classic time-series analysis logic. |
+| **3. Contains Duplicate** | Hash Set | Basic data quality check (uniqueness). |
+| **4. Product of Array Except Self** | Prefix/Suffix Product | **Critical.** Teaches you to avoid division and use pre-computation. |
+| **5. Maximum Subarray** | Kadane’s Algorithm | The standard for finding "best execution windows" in data. |
+| **6. Merge Intervals** | Sorting | Essential for cleaning messy time-series data (e.g., server logs). |
+| **7. Valid Anagram** | Frequency Counter | Basic NLP (text processing) foundation. |
+| **8. Valid Parentheses** | Stack | Checks structure validity (like parsing JSON or XML). |
+
+### 2. The "Data Manipulation" Tier (Frequency: Medium-High)
+*These test your ability to clean and reformat data, which is 60% of a Data Scientist's job.*
+
+| Problem | Pattern | Why it's here |
+| :--- | :--- | :--- |
+| **9. Group Anagrams** | Hash Map (Sorting key) | Aggregating data based on categorical features. |
+| **10. Longest Substring Without Repeating Characters** | Sliding Window | Parsing complex strings efficiently. |
+| **11. 3Sum** | Two Pointers | The evolution of Two Sum; teaches duplicate handling. |
+| **12. Container With Most Water** | Two Pointers (Greedy) | Optimization logic without using calculus. |
+| **13. Rotate Image** | Matrix | Image processing basics (Computer Vision). |
+| **14. Set Matrix Zeroes** | Matrix | optimizing space complexity in large grids. |
+| **15. Spiral Matrix** | Matrix Simulation | Traversing non-linear data structures. |
+| **16. Longest Consecutive Sequence** | Hash Set | Finding trends in unsorted data in $O(N)$. |
+
+### 3. The "Separator" Tier (Frequency: Medium)
+*These are harder. Solving one of these proves you are "Senior" material.*
+
+| Problem | Pattern | Why it's here |
+| :--- | :--- | :--- |
+| **17. Search in Rotated Sorted Array** | Binary Search | Handling edge cases in sorted data. |
+| **18. Find Minimum in Rotated Sorted Array** | Binary Search | Optimization on broken/shifted datasets. |
+| **19. Longest Repeating Character Replacement** | Sliding Window | Advanced cleaning: "What if I can change K errors?" |
+| **20. Minimum Window Substring** | Sliding Window | The ultimate string filtering test. |
+| **21. Palindromic Substrings** | Expansion from Center | NLP pattern matching. |
+| **22. Longest Palindromic Substring** | Expansion from Center | More advanced NLP pattern matching. |
+| **23. Insert Interval** | Interval Logic | merging new real-time data into existing datasets. |
+| **24. Non-overlapping Intervals** | Greedy (Sorting) | Resource scheduling and conflict resolution. |
+| **25. Trapping Rain Water** | Two Pointers | The "Boss Level" array problem. Tests pure logic. |
+
+### How to Practice This List
+1.  **Don't go in order.** Do one from "Must Know," then one from "Data Manipulation."
+2.  **Focus on Matrix problems.** As a Data Scientist, `Rotate Image` and `Set Matrix Zeroes` are incredibly relevant to understanding how Tensors work in Deep Learning.
+3.  **Stop after 20 minutes.** If you can't solve it, look at the **pattern** (not the code), and try again.
+
+[Data Structure and Algorithm Patterns for LeetCode Interviews – Tutorial](https://www.youtube.com/watch?v=Z_c4byLrNBU)
+
+This video is relevant because it explicitly teaches the **patterns** (like Sliding Window and Two Pointers) used to solve the questions above, which is faster than memorizing 25 separate solutions.
