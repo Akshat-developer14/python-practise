@@ -2,26 +2,28 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        sort_prices = prices.copy()
-        sort_prices.sort()
-        
-        index = prices.index(sort_prices[0])
-        
-        if index == len(prices) - 1:
+        if not prices:
             return 0
         
-        largest = sort_prices[0]
+        min_price = prices[0]
+        max_profit = 0
 
-        for i in range(index, len(prices)):
-            if largest < prices[i]:
-                largest = prices[i]
-        return largest - sort_prices[0]
+        for price in prices[1:]:
+            profit = price - min_price
 
-    
+            if profit > max_profit:
+                max_profit = profit
+
+            if price < min_price:
+                min_price = price
+            
+        return max_profit
+
+
 
 sol = Solution()
 
-prices = [7, 2, 3, 4, 5, 1]
+prices = [7, 1, 5, 3, 6, 4]
 
 result = sol.maxProfit(prices)
 print(result)

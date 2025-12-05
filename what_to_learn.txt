@@ -1,0 +1,65 @@
+For a Data Scientist, DSA is not about building operating systems; it is about **computational efficiency** and **data manipulation**.
+
+Interviews for Data Science roles typically focus on "Practical DSA"—logic you might actually use to clean a dataset or optimize a feature engineering pipeline.
+
+Here is a prioritized breakdown of what to focus on.
+
+### 1. The "Must-Know" Tier (80% of Questions)
+Focus heavily on these. They directly relate to data manipulation in Python/Pandas.
+
+* **Arrays & Strings:**
+    * **Why:** This is the bread and butter of data cleaning.
+    * **Key Concepts:** Two pointers, sliding window, reversing arrays, string parsing.
+    * **Typical Problems:**
+        * "Find the missing number in an array."
+        * "Check if a string is a palindrome."
+        * "Merge two sorted arrays." (Similar to the logic of `merge sort` or SQL joins).
+        * "Move all zeros to the end."
+
+* **Hash Maps (Dictionaries/Hash Tables):**
+    * **Why:** Essential for lookups, counting frequencies (histograms), and finding duplicates without $O(N^2)$ complexity.
+    * **Key Concepts:** Key-value pairs, collisions (basic concept), frequency counters.
+    * **Typical Problems:**
+        * **Two Sum:** "Find two numbers in an array that add up to a target." (Classic interview staple).
+        * "First non-repeating character in a string."
+        * "Group Anagrams."
+        * "Intersection of two arrays."
+
+* **Basic Sorting & Searching:**
+    * **Why:** Understanding time complexity (Big O) is crucial when working with millions of rows.
+    * **Key Concepts:** Binary Search (search in $O(\log N)$), Merge Sort vs. Quick Sort (know *why* one is faster in certain cases).
+    * **Typical Problems:**
+        * "Binary search in a sorted array."
+        * "Find the Kth largest element." (Sorting vs. Heap approach).
+
+---
+
+### 2. The "Conceptual" Tier (Model Understanding)
+You likely won't be asked to code these from scratch, but you must understand how they work because they underpin ML algorithms.
+
+* **Trees (Binary Trees & BSTs):**
+    * **Why:** Decision Trees, Random Forests, and Gradient Boosting (XGBoost) are literally built on tree structures.
+    * **Focus:** Understand tree traversal (In-order, Pre-order), depth vs. breadth, and how a split in a decision tree relates to tree depth.
+* **Graphs:**
+    * **Why:** Knowledge graphs, social network analysis, and recommendation systems.
+    * **Focus:** BFS (Breadth-First Search) and DFS (Depth-First Search). You typically don't need complex algorithms like Dijkstra unless applying for a specialized role (e.g., logistics/routing).
+
+---
+
+### 3. What You Can Likely Skip (Low ROI)
+Unless you are applying to a top-tier tech firm (Google/Meta) or a specialized Research Scientist role, you generally **do not** need to master:
+* Complex Dynamic Programming (e.g., Matrix Chain Multiplication).
+* Advanced Graph Algorithms (Bellman-Ford, Kruskal’s).
+* Bit Manipulation (mostly for low-level systems programming).
+* Tries or Segment Trees.
+
+### Recommended Study Strategy
+Since you are prepping for Data Science, **don't just code the solution; analyze the complexity.**
+
+1.  **Big O Notation:** Always be able to say, "My solution is $O(N)$ time complexity and $O(1)$ space complexity." This shows you care about scalability.
+2.  **Python Built-ins:** Master Python's efficiency tools. Know *why* `set(list)` is faster for checking existence than just `list`.
+3.  **Practice List:**
+    * *Easy:* FizzBuzz, Valid Anagram, Contains Duplicate.
+    * *Medium:* Two Sum, Product of Array Except Self, Maximum Subarray (Kadane’s Algo).
+
+**Next Step:** Would you like me to give you a specific "Two Sum" or "Frequency Count" problem to solve right now so we can practice the Python optimization pattern?
