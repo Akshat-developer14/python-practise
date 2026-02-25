@@ -95,8 +95,8 @@ for lr in learning_rates:
 # enumerate() gives you both the index and the value simultaneously
 models = ["LogisticRegression", "RandomForest", "XGBoost"]
 
-for index, model_name in enumerate(models):
-    print(f"Model {index + 1}: {model_name}")
+for index, model_name in enumerate(models, start=1):
+    print(f"Model {index}: {model_name}")
 
 # ---------------------------------------------------------
 # 10. Iterating with zip()
